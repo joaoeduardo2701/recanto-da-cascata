@@ -1,0 +1,21 @@
+<section class="galeria-container" id="galeria">
+  <h2>Nossa Galeria</h2>
+  
+  <div class="galeria-grid">
+    @for (foto of fotos; track foto.url) {
+      <div class="galeria-item" (click)="abrirFoto(foto)">
+        <img [src]="foto.url" [alt]="foto.alt">
+      </div>
+    }
+  </div>
+
+  @if (fotoSelecionada) {
+    <div class="modal-overlay" (click)="fecharFoto()">
+      <button class="btn-fechar" (click)="fecharFoto()">&times;</button>
+      
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        <img [src]="fotoSelecionada.url" [alt]="fotoSelecionada.alt">
+      </div>
+    </div>
+  }
+</section>
