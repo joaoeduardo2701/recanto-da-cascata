@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   logoImage = 'assets/logo-cascata.png';
 
-  // Função para scroll suave (opcional, caso não queira usar apenas CSS)
   scrollTo(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
