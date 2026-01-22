@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.scss']
 })
 export class NavbarComponent {
-  logoImage = 'assets/logo-cascata.png';
-
   scrollTo(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
