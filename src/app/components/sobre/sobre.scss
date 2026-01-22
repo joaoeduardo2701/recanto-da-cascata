@@ -1,6 +1,7 @@
 .sobre-container {
   display: flex;
   flex-direction: row;
+  scroll-margin-top: 150px;
   align-items: center;
   justify-content: center;
   margin: 100px auto;
@@ -9,8 +10,8 @@
 
   img {
     width: 400px;
-    height: auto; // Garante que a proporção seja mantida
-    border-radius: 8px; // Sugestão visual opcional
+    height: auto; 
+    border-radius: 8px;
   }
 
   @media (max-width: 1368px) {
@@ -18,7 +19,7 @@
     margin: 40px 20px;
 
     img {
-      width: 100%; // No mobile, a imagem ocupa a largura disponível
+      width: 100%;
       max-width: 500px;
     }
   }
@@ -47,7 +48,7 @@
 
   p {
     line-height: 1.6;
-    color: #333; // Uma cor escura para melhor leitura
+    color: #333; 
   }
 
   #first {
